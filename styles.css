@@ -17,7 +17,7 @@ body{
 /* popular collection */
 .product-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 10px;
     max-width: 80%;
     width: 100%;
@@ -43,8 +43,10 @@ body{
     max-width: 100%;
     max-height: 200px;
     object-fit: cover;
+    object-position: center;
     width: 100%;
     border-radius: 5px;
+    image-rendering: pixelated;
 }
 .rating {
     padding-bottom: 4px;
@@ -57,3 +59,24 @@ body{
     font-size: .6em;
 }
 /* responsive layout */
+/* for small device */
+@media screen and (max-width: 576px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* for md device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-container {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 100%;
+        padding: 20px;
+    }
+}
