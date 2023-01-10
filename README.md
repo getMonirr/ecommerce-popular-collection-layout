@@ -1,4 +1,4 @@
-# ecommerce-popular-collection-layout
+# eCommerce-popular-collection-layout
 This is an eCommerce popular product collection page layout design with fully responsive without using any CSS framework just using pure CSS media query. it fits all devices. 
 Technology use:
 1. HTML5
